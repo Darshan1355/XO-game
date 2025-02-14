@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+    
+        <p style="color: red;font-size: 35px;"><b>X</b><b style="color: rgb(255, 170, 0) !important;">O</b> </p>
+        
+   
+    <div id="gameBoard">
+        <button class="cell" id="cell0"></button>
+        <button class="cell" id="cell1"></button>
+        <button class="cell" id="cell2"></button>
+        <button class="cell" id="cell3"></button>
+        <button class="cell" id="cell4"></button>
+        <button class="cell" id="cell5"></button>
+        <button class="cell" id="cell6"></button>
+        <button class="cell" id="cell7"></button>
+        <button class="cell" id="cell8"></button>
+    </div>
+    <div class="buttons">
+        <button id="restartBtn">Restart Game</button>
+        <button id="backBtn">Back</button>
+        <h1 id="gameMessage" style="color: rgb(255, 14, 54); font-size: 3em; display: none;text-shadow: 3px 0 3px white;"></h1> <!-- Add this -->
+    </div>
+
+    <!-- Message Box -->
+    <div id="messageBox" class="hidden">
+        <p>Are you sure you want to leave the game?</p>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <script src="interface.js"></script>
+</body>
+</html>

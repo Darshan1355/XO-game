@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px; background-color: blue;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    background-color: lightgray !important;
+    border: 6px solid #fbfb00;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:active {
+    background-color:rgb(117, 255, 117);
+   
+}
+
+#restartBtn, #backBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color:rgb(40, 203, 40);
+    color: white;
+}
+
+#backBtn {
+    margin-left: 20px; /* Space to the right of restart button */
+}
+
+.buttons {
+    display: inline-block;
+}
+
+#messageBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+}
+
+#messageBox p {
+    margin-bottom: 10px;
+}
+
+#messageBox button {
+    margin: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameMessage {
+    color: rgb(27, 235, 16);
+    font-size: 2em;
+    display: none; /* Initially hidden */
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="options.css">
+    <style>
+        body{
+            background-image: url('https://cdn.soft112.com/tic-tac-toe-2-player-xo-game-597/00/00/0H/YH/00000HYHGH/pad_screenshot_Y8R3W5F8Z5.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <p style="color: red;font-size: 35px;text-align: center;"><b>X</b><b style="color: rgb(255, 170, 0) !important;">O</b> </p>
+            <a href="#" id="newGameLink">New Game</a>
+            <a href="about.html" id="aboutLink">About</a>
+            <a href="#" id="exitLink">Exit</a> <!-- Exit button with confirmation -->
+        </div>
+    </div>
+
+    <div id="overlay" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 100;"></div>
+
+    <div id="confirmation-box" class="confirmation-box" style="display:none;">
+        <p>Are you sure you want to exit?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+    
+
+
+    <script src="options.js"></script>
+</body>
+</html>
