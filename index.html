@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>start game</title>
-</head>
-<style>
-            body{
+    <title>Start Game</title>
+    <style>
+        /* Make sure the body fills the entire screen */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
             background-image: url('https://cdn.soft112.com/tic-tac-toe-2-player-xo-game-597/00/00/0H/YH/00000HYHGH/pad_screenshot_Y8R3W5F8Z5.webp');
-            background-size: cover;
-            background-position: center;
+            background-size: cover; /* Ensure the image covers the entire screen */
+            background-position: center; /* Center the image */
             background-repeat: no-repeat;
         }
-</style>
+    </style>
+</head>
 
 <script>
-    setTimeout(function(){
-        window.open("options.html","_blank");
-        window.location.href="about:blank";
-    } ,4000);
+    function openOptionsPage() {
+        // Redirect to the options.html page after 2 seconds
+        window.location.href = "options.html";
+    }
 
-
-
+    // Trigger the openOptionsPage function after 2 seconds (2000 milliseconds)
+    setTimeout(openOptionsPage, 2000); 
 </script>
+
 <body>
    <div style="height: 600px;">
-
+      <!-- The content can be customized or removed as per your needs -->
    </div> 
 </body>
 </html>
